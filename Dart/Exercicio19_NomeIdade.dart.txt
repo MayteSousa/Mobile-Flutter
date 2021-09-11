@@ -1,0 +1,39 @@
+/*
+4. Armazenar o nome e idade de cem pessoas. Após a digitação, exibir os dados
+(nome e idade) de todas as pessoas.
+*/
+
+void main () {
+  var numeros = <int> [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+  var tamanho;
+  int c = 3, n;
+ 
+  Map<String, dynamic> listaDeCompras = {
+    'Alice Barbuda' : 12,
+    'Maria Você Me Mata' : 31,
+    'Eugênia Longo Campos' : 23,
+    'Naida Navinda Navolta' :54,
+    'Pieddra Pereira' : 87,
+    'Alucinética Honorata': 25,
+    'Paullynelly Mell': 49,
+    'Deusarina Venus de Milo': 15
+};
+  
+     print('>>$listaDeCompras[]'); // 2   
+   // print(" >> ${carro.nome}");
+  print(" ");
+    
+ tamanho = listaDeCompras.length;
+  
+  for(int i = 0; i < tamanho; i++){
+    print('>>${listaDeCompras}');  
+  }
+print("$tamanho: ");
+/*// Ou através do construtor Map()
+var listaDeCompras = Map();
+listaDeCompras['chocolates'] = 2;
+listaDeCompras['refrigerantes'] = 4;
+listaDeCompras['carne'] = 1.5;*/
+  
+
+}

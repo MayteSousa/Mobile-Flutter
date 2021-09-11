@@ -1,0 +1,23 @@
+//5. Entrar via teclado com o valor de cinco produtos. Após as entradas, digitar um valor referente ao
+//pagamento da somatória destes valores. Calcular e exibir o troco que deverá ser devolvido.
+
+void main() {
+  double p1 = 523;
+  double p2 = 355;
+  double p3 = 120;
+  double p4 = 280;
+  double p5 = 448;
+  double total = (p1 + p2 + p3 + p4 + p5);
+  double pagamento = 2000;
+  double troco = pagamento - total;
+ 
+    
+  print("Produto  1: $p1" );
+  print("Produto  2: $p2" );
+  print("Produto  3: $p3" );
+  print("Produto  4: $p4" );
+  print("Produto  5: $p5" );
+  print("*** Total: $total");
+  print(" ");
+  print("Troco: $troco");
+}

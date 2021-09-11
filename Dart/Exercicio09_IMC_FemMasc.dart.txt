@@ -1,0 +1,64 @@
+/*
+4. Entrar com o peso, o sexo e a altura de uma determinada pessoa. Após a digitação, exibir se esta pessoa
+está ou não com seu peso ideal. Fórmula: peso/altura².
+*/
+
+/*
+ * Feminino
+<19 	   Abaixo do peso
+19<= R <24 Peso ideal
+R >=24 Acima do Peso
+
+
+Masculino
+R<20 	   Abaixo do peso
+20<= R <25 Peso ideal
+R >=25 Acima do Peso
+ */
+void main() {
+  String nome = "Marcio Garcia";
+  String sexo = "Masculino";
+  double peso = 86;
+  double altura = 1.91;
+  double imc = peso / ( altura * altura);
+  
+  print('Nome: $nome');
+  print('Peso: $peso');
+  print('Altura: $altura');
+  print('Altura: $sexo');  
+  print('IMC: $imc');
+  print(' ');
+  
+  if( sexo =='Feminino'){
+      if (imc < 19){
+    print('Abaixo do peso');
+  }
+  else{
+    if((imc > 19) & (imc < 24)){
+      print('Peso ideal');
+    }
+    else{
+      if(imc > 24){
+        print('Acima do Peso');
+      }        
+    }
+  }  
+  }
+  else{
+    if(sexo =='Masculino'){
+            if (imc < 20){
+    print('Abaixo do peso');
+  }
+  else{
+    if((imc > 20) & (imc < 25)){
+      print('Peso ideal');
+    }
+    else{
+      if(imc > 25){
+        print('Acima do Peso');
+      }        
+    }
+  }  
+    }  
+  }  
+} 

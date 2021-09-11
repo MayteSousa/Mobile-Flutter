@@ -1,0 +1,51 @@
+/*
+3. A partir de três valores que serão digitados, verificar se formam ou não um triângulo. 
+Em caso positivo, exibir sua classificação: “Isósceles, escaleno ou eqüilátero”. 
+Um triângulo escaleno possui todos os lados diferentes, 
+o isósceles, dois lados iguais
+e o eqüilátero, todos os lados iguais. 
+Para existir triângulo é necessário que a soma de dois lados quaisquer
+seja maior que o outro, isto, para os três lados
+*/
+
+/*
+ a = 16 , b = 20  e c = 30 
+ 
+ ((a + b) > c ) & (( a + c) > b) & ((b + c) > a)
+
+ */
+void main() {
+  /*
+  EXEMPLO DE TRIANGULO INEXISTENTE
+  double a = 7;
+  double b = 3;
+  double c = 2;
+  */
+  
+  double a = 16;
+  double b = 20;
+  double c = 30;
+  
+  if (((a + b) > c ) & (( a + c) > b) & ((b + c) > a)){
+    print('Temos um Triângulo');
+    if( (a != b) && ( a != c) && ( b != c) ){
+      print('Escaleno');
+    }
+    else{
+        if((a == b) && ( a == c) && ( b == c)){
+          print('Eqüilátero');
+      }
+      else{          
+        if((a == b) || ( a == c) || ( b == c)){
+         print('Isósceles');                    
+        }
+      }             
+    }
+    
+  }
+  else{
+    print('Não Temos um Triângulo');
+  }
+
+} 
+

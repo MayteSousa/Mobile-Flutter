@@ -1,0 +1,10 @@
+//3. Entrar via teclado com o valor de uma temperatura em graus Celsius, calcular e exibir sua temperatura equivalente em Fahrenheit.igitados.
+//F = C x 1,8 + 32
+void main() {
+  double c = 37;
+  double f = c * 1.8 + 32;
+  
+  
+  print('$cºC equivale a $fºF');
+ 
+}

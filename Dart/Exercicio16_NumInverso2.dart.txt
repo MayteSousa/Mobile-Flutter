@@ -1,0 +1,23 @@
+/*
+ 1. Armazenar dez números na memória do computador. Exibir os valores na ordem 
+ inversa à da digitação.
+ * */
+
+void main () {
+  var numeros = <int> [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+  var tamanho = numeros.length;
+ // tamanho = tamanho -1;
+  print('Original: ');
+  for(int i = 0; i < tamanho; ++i){
+   print( numeros.elementAt (i));
+  }
+  
+  print(' ');
+  
+  print('Inversa: ');
+  for(int i = tamanho - 1; i >=0 ; i--){
+    print( numeros.elementAt (i));
+  }
+
+}

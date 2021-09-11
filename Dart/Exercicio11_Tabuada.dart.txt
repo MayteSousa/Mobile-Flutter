@@ -1,0 +1,11 @@
+/*
+1. Entrar via teclado com um valor qualquer. Após a digitação, exibir a tabuada do valor solicitado, no intervalo de um a dez.
+*/
+
+void main() {
+  int n = 6;
+  for (int i = 1; i < 11; i++) {
+    print('$i x $n = ${i * n}');
+  }
+  
+}

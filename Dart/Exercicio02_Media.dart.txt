@@ -1,0 +1,11 @@
+//2. Calcular e exibir a média aritmética de quatro valores quaisquer que serão digitados.
+void main() {
+  double a = 10;
+  double b = 5;
+  double c = 3;
+  double d = 7;
+  double media = (a + b + c + d)/4;
+  
+  print('A média aritmética de  $a, $b, $c e $d é = $media');
+ 
+}

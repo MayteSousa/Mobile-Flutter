@@ -1,0 +1,108 @@
+/*
+ Criar um mini sistema bancário com as classes: Conta, Conta Corrente, Conta Poupança e Cliente. 
+ Cada classe deve ter atributos específicos. No sistema devemos ter pelo menos 3 funcionalidades: 
+ Saque, Depósito e Transferência.
+ */
+
+
+class Cliente {
+  String nome;
+  int numconta;
+    
+  Cliente(this.nome, this.numconta);
+  
+  // usado para imprimir todos os objetos da lista
+//  String toString() {
+  //  return "$nome - $numconta - $saldo";  
+  
+  String dadosConta(){
+    return "Titular: $nome - NºConta: $numconta";
+  }
+  
+}
+
+
+class Conta{
+  double valor, saldo;
+  
+  Conta(this.saldo,this.valor);
+  
+  sacar() {
+    
+        if ( saldo > valor ){
+          print("Saldo Inicial: $saldo");
+      saldo = saldo - valor;
+      print("Sacar $valor Saldo Final $saldo");
+    }
+    else{
+      print("Saldo Insuficiente");
+    }   
+  }
+
+}
+
+
+class Contacorrente extends Conta{
+  //double valor = 0, saldo = 0;
+  
+  Contacorrente(saldo, valor) : super(saldo,valor);
+  
+  transferir() {
+    
+        if ( saldo > valor ){
+          print("Saldo Inicial: $saldo");
+      saldo = saldo - valor;
+      print("Transferir $valor Saldo Final $saldo");
+    }
+    else{
+      print("Saldo Insuficiente");
+    }   
+  }
+
+}
+
+
+
+class Contapoupanca extends Conta{
+  //double valor = 0, saldo = 0;
+  
+  Contapoupanca(saldo, valor) : super(saldo,valor);
+  
+  depositar() {
+     print("Saldo Inicial: $saldo");
+     saldo = saldo + valor;
+     print("Depositar $valor Saldo Final $saldo");
+    } 
+  }
+
+  
+
+
+ 
+void main() {
+  Cliente c = Cliente("Margarida", 123456);
+ // Cliente c2 = Cliente("Hortencia", 234567);
+  //Cliente c3 = Cliente("Samambaia", 345678);
+  
+  
+  
+  //final clientes = [c1, c2, c3];
+
+ // for(Cliente c in clientes) {
+    print(c.dadosConta());
+ // }
+  
+  print("\n");
+  
+  Conta s = Conta(19800, 1800); 
+  print(s.sacar());
+  print("\n");
+  
+   Contacorrente t = Contacorrente(19800, 10000); 
+  print(t.transferir()); 
+  print("\n");
+  
+     Contapoupanca d = Contapoupanca(19800, 20000); 
+  print(d.depositar()); 
+  print("\n");
+}

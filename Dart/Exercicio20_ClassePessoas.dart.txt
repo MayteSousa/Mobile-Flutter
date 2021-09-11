@@ -1,0 +1,57 @@
+/*
+ 20. Armazenar o nome, sexo e idade de cem pessoas. As entradas devem ser 
+ apenas “F” ou “M” para o sexo e valores positivos para a idade. Após a 
+ digitação dos dados, exibir os dados (nome, sexo e idade) de todas as 
+ pessoas do sexo feminino.
+ * */
+
+void main() {
+  
+    Pessoa p1 = Pessoa('Alice Barbuda', 'F', 12);
+    Pessoa p2 = Pessoa('Maria Você Me Mata', 'F', 31);
+    Pessoa p3 = Pessoa('Eugênia Longo Campos', 'F', 23);
+    Pessoa p4 = Pessoa('Naida Navinda Navolta', 'F', 54);
+    Pessoa p5 = Pessoa('Pieddra Pereira', 'F', 87);
+    Pessoa p6 = Pessoa('Alucinética Honorata', 'F', 25);
+    Pessoa p7 = Pessoa('Paullynelly Mell', 'M', 49);
+    Pessoa p8 = Pessoa('Deusarina Venus de Milo', 'F', 1);
+    Pessoa p9 = Pessoa('Venus de Milo', 'M', 1);
+  
+
+  
+  final pessoas = [p1, p2, p3, p4, p5, p6, p7, p8, p9];
+  
+ // print("Lista: $carros, length: ${carros.length}");
+  
+  for(Pessoa c in pessoas) {
+    print(c.dadosPessoa());
+  }
+}
+ 
+ 
+class Pessoa {
+   String nome;
+  int idade;
+  String sexo;
+  
+  Pessoa(this.nome, this.sexo, this.idade);
+  
+  // usado para imprimir todos os objetos da lista
+  String toString() {
+    if(sexo != 'F')
+    return "$nome - $sexo - $idade";
+  }  
+  
+  //@override
+  String dadosPessoa(){
+    //return "${super.dadosCarro()} Carrão: $nome e Ano: $ano";
+    return "$nome - $sexo - $idade";
+  }
+  
+    // looping pelo "values" do map
+  for(Pessoa in pessoa.values) {
+       
+    print(" >> ${Pessoa.nome}");
+  }
+}
+ 

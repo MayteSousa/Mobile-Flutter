@@ -1,0 +1,17 @@
+/*
+ 2. Entrar via teclado com um valor (X) qualquer. Digitar o intervalo que o programa que deverá calcular a tabuada do valor X digitado, sendo que o segundo valor (B), deverá ser maior que o primeiro (A). Exibir a tabuada do valor digitado, no intervalo decrescente, ou seja, a tabuada de X no intervalo de B para A.
+ * */
+
+void main() {
+  int n = 3;
+  int inicio = 1;
+  int fim = 10;
+  
+  if (fim > inicio){
+    for (int i = fim; i >= inicio; i--) {
+      print('$i x $n = ${i * n}');
+  }
+    
+  }
+    
+}

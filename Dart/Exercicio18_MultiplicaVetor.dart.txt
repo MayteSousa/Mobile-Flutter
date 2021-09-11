@@ -1,0 +1,28 @@
+/*
+3. Armazenar vinte valores em um vetor. Após a digitação, entrar com uma
+constante multiplicativa que deverá multiplicar cada um dos valores do vetor e 
+armazenar o resultado no próprio vetor, na respectiva posição. * */
+
+void main () {
+  var numeros = <int> [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+  var tamanho = numeros.length;
+  int c = 3, n;
+ 
+  print('Original: ');
+  print( '$numeros');
+    
+  print(' ');
+  
+  
+  for(int i = 0; i < tamanho ; i++){
+    n = numeros.elementAt(i) * c;
+    
+       // print('$n');
+    numeros.removeAt(i);
+    numeros.insert(i, n);
+
+  }    
+  
+  print('Final: ');
+  print('$numeros');
+}

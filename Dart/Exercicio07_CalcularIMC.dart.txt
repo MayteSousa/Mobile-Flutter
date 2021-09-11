@@ -1,0 +1,37 @@
+/*2. Entrar com o peso e a altura de uma determinada pessoa. Após a digitação, exibir se esta pessoa está ou não com seu peso ideal. Fórmula: peso/altura².*/
+void main() {
+  String nome = "Marcio Garcia";
+  double peso = 86;
+  double altura = 1.91;
+  double imc = peso / ( altura * altura);
+  
+  print('Nome: $nome');
+  print('Peso: $peso');
+  print('Altura: $altura');
+  print('IMC: $imc');
+  print(' ');
+  
+  if (imc <  18.5){
+    print('MAGREZA');
+  }
+  else{
+    if((imc > 18.5) & (imc < 24.9)){
+      print('NORMAL');
+    }
+    else{
+      if((imc > 25) & (imc < 29.9)){
+        print('SOBREPESO');
+      }        
+       else{
+        if((imc > 30) & (imc < 39.9)){
+          print('OBESIDADE	II');
+        }
+       else{
+        if(imc > 40){
+          print('OBESIDADE GRAVE III');
+        }  
+       }
+      }
+    }
+  }
+} 

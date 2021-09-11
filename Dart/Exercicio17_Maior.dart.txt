@@ -1,0 +1,23 @@
+/*
+2. Armazenar dez valores na memória do computador. Após a digitação dos valores, 
+criar uma rotina para ler os valores e achar e exibir o maior deles.
+ * */
+
+void main () {
+  var numeros = <int> [1, 2, 3, 4, 5, 16, 7, 8, 9, 10];
+  var tamanho = numeros.length;
+  int maior = numeros.first;
+ 
+  print('Original: ');
+  print( '$numeros');
+    
+  print(' ');
+  
+  print('Maior: ');
+  for(int i = 0; i < tamanho ; i++){
+    if ( numeros.elementAt(i) > maior ){
+      maior = numeros.elementAt(i);
+    }    
+  }
+  print(maior);
+}
